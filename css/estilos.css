@@ -1,0 +1,87 @@
+body{
+    background-color: #ffffe6;
+}
+header{
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.contenedor{
+    display: inline-block;
+
+}
+
+.seccion {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #fffffa;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.seccion:hover{
+    transform: translateY(-5px);
+}
+
+.encabezado {
+    font-style: italic;
+    font-weight: bold;
+    color: #4d4d4d;
+    margin: 8px 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.encabezado::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.5s ease-in-out;
+}
+
+.seccion:hover .encabezado::after {
+    width: 50%;
+    background-color: #4d4d4d;
+}
+
+.seccion .encabezado::after {
+    width: 0; 
+    background-color: transparent;
+    transition: width 0.5s ease-in-out, background-color 0.7s ease-in-out;
+}
+
+.columnas {
+    display: flex;
+}
+
+.columnas div {
+    flex: 1;
+}
+
+.dato_solicitado{
+    font-weight: bold;
+}
+
+.dato{
+    font-style: italic;
+}
+
+div p {
+    font-size: 13px;
+    color: #00004d;
+}
+
+footer{
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px;
+}

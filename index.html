@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta name="description" content="Ejercicio práctico #1: Elaborar una página en lenguaje HTML y CSS">
+    <title>Diego José Lutín Miranda</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Hoja de Vida</h1>
+    </header>
+    <section class="contenedor">
+        <div style="overflow: auto; float: left; width: 30%;" class="seccion">
+            <h2 class="encabezado">Datos personales</h2>
+            <div style="text-align: center;">
+                <img style="width: 70%; padding: 10px; border-radius: 50%;" src="../img/foto.jpg" alt="Foto XD" height="250px">
+            </div>
+            <div style="width: 90%; padding: 10px;" class="columnas">
+                <div>
+                    <p class="dato_solicitado">Nombre: </p>
+                    <p class="dato_solicitado">Edad: </p>
+                    <p class="dato_solicitado">Correo electrónico: </p>
+                    <p class="dato_solicitado">Número de Carnet: </p>
+                </div>
+                <div>
+                    <p class="dato">Diego José Lutín Miranda</p>
+                    <p class="dato">22 años</p>
+                    <p class="dato"><a href="mailto:dlutinm1@miumg.edu.gt">dlutinm1@miumg.edu.gt</a></p>
+                    <p class="dato">5190-20-16218</p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 63%; float: right;" class="seccion">
+            <h2 class="encabezado">Estudios realizados</h2>
+            <div class="columnas">
+                <div>
+                    <p class="dato_solicitado">Primaria: </p>
+                    <p class="dato_solicitado">Secundaria: </p>
+                    <p class="dato_solicitado">Medio: </p>
+                    <p class="dato_solicitado">Superior: </p>
+                </div>
+                <div>
+                    <p class="dato">Colegio Divina Infancia</p>
+                    <p class="dato">Colegio Divina Infancia</p>
+                    <p class="dato">Liceo Técnico de Villa Nueva</p>
+                    <p class="dato">Universidad Mariano Galvez de Guatemala</p>
+                </div>
+            </div>
+        </div>
+    
+        <div style="width: 63%; float: right;" class="seccion">
+            <h2 class="encabezado">Cursos y Certificaciones</h2>
+            <div>
+                <p class="dato_solicitado">Nombre del curso: </p>
+                <p class="dato_solicitado">Descripción: </p>
+                <p class="dato_solicitado">Enlace al sitio principal del proveedor del curso: </p>
+                <ul>
+                    <li>
+                        <p class="dato">Desarrollo Full Stack</p>
+                        <p class="dato">En este curso de Desarrollo Full Stack, aprenderás a construir aplicaciones web modernas y dinámicas utilizando las tecnologías más demandadas en la industria. Comenzarás por adquirir sólidos fundamentos en HTML, CSS y JavaScript para crear interfaces de usuario atractivas y responsivas.</p>
+                        <a href="https://www.intecap.edu.gt/">Enlace al Curso 1</a>
+                    </li>
+                    <li>
+                        <p class="dato">Ingles Nivel B2</p>
+                        <p class="dato">En este curso de inglés, te sumergirás en un ambiente de aprendizaje dinámico y participativo, diseñado para estudiantes que ya tienen una base sólida en inglés. A lo largo del programa, mejorarás tus habilidades de escucha, lectura, escritura y conversación, enfocándote en situaciones del mundo real.</p>
+                        <a href="https://calusacusac.usac.edu.gt/">Enlace al Curso 2</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div style="width: 63%; float: right;" class="seccion">
+            <h2 class="encabezado">Experiencia en desarrollo web</h2>
+            <p>Experiencia en el manejo de aplicaciones web .NET(MVC), PHP, Javascript y ReactJS.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Si un elemento &lt;footer&gt; es declarado dentro de un elemento de sección (como &lt;article&gt; o &lt;section&gt;) representa un pie en el ámbito de dicho elemento,</p>
+        <p>de lo contrario (cuando pertenece al elemento &lt;body&gt;) representa un pie para el documento completo.</p>
+    </footer>
+
+</body>
+</html>
